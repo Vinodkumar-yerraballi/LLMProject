@@ -18,7 +18,7 @@ promt=ChatPromptTemplate.from_messages(
     ]
 )
 
-llm_model=ollama(model='Gemma 3')
+llm_model=ollama(model='gemma3')
 output=StrOutputParser()
 chain_model=promt | llm_model | output
 
